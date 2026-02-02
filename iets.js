@@ -2,7 +2,7 @@ const body = document.body
 
 const divje = document.createElement("div")
 
-divje.innerText = 'hoi'
+divje.innerText = 'Doei'
 
 body.append(divje)
 
@@ -21,6 +21,10 @@ function blauw() {
 }
 function wit() {
     document.querySelector("p").style.color = "white"
+}
+function randomKleur() {
+var randomColor = Math.floor(Math.random()*16777215).toString(16);
+document.querySelector("p").style.color = "#" + randomColor
 }
 // Opdracht 1: voeg een functie toe die heet voegToe()
 // als op de knop gedrukt wordt, dan is de div weer zichtbaar
